@@ -1,0 +1,20 @@
+Plaintext
+
+
+autonomous-ds-team/
+│
+├── data/
+│   ├── raw/                  # Stores original uploaded CSVs
+│   └── processed/            # Stores outputs from Training/Feature Engineering agents
+│
+├── models/                   # Stores saved/trained ML model binaries (.pkl or .joblib)
+│
+├── src/
+│   ├── __init__.py
+│   ├── agents.py             # Defines the 6 CrewAI Agents
+│   ├── tasks.py              # Defines the specific tasks for each agent
+│   └── crew.py               # Assembles agents and tasks into the sequential workflow
+│
+├── app.py                    # Streamlit Frontend UI Main File
+├── requirements.txt          # Python dependencies
+└── README.md                 # Project documentation and setup guide
